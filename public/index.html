@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <section>
+        <div>
+            <h2 class="formTitle">Ingrese nuevo producto</h2>
+            <form class="form" action="/api/productos" method="POST">
+                <label for="a">Nombre</label>
+                <input id="a" class="form__input" type="text" name="nombre" placeholder="ingrese el nombre">
+                <label for="b">Precio</label>
+                <input id="b" class="form__input" type="text" name="precio" placeholder="ingrese el precio">
+                <label for="c">URL</label>
+                <input id="c" class="form__input" type="text" name="url" placeholder="ingrese la url">
+                <button class="form__button">Enviar</button>
+            </form>
+        </div>
+        <div>
+            <h2 class="formTitle">Ingrese producto a actualizar</h2>
+            <form class="form" action="/api/productos/:id"method="PUT">
+                <label for="1">ID</label>
+                <input id="1" class="form__input" type="text" name="id" placeholder="ingrese el id">
+                <label for="2">Nombre</label>
+                <input id="2" class="form__input" type="text" name="nombre" placeholder="ingrese el nombre">
+                <label for="3">Precio</label>
+                <input id="3" class="form__input" type="text" name="precio" placeholder="ingrese el precio">
+                <label for="4">URL</label>
+                <input id="4" class="form__input" type="text" name="url" placeholder="ingrese la url">
+                <button class="form__button">Enviar</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
